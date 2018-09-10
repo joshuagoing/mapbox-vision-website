@@ -3,100 +3,120 @@
     <p>The Vision SDK uses highly efficient neural networks to process imagery
     directly on user&rsquo;s mobile or embedded devices, turning any connected
     camera into a second set of eyes for your car. In doing so, the Vision SDK
-    enables features such as augmented reality navigation, object and lane
-    detection, sign classification, and more. The Vision SDK integrates with the
-    rest of Mapbox&rsquo;s live location platform, bringing visual context to
-    the navigation experience. Changes to the driving environment are detected
-    on the spot and uploaded to make low-latency, low-bandwidth updates to the
-    living map.</p>
-- question: What are the components of the Mapbox Vision SDK?
+    enables the following user-facing features:</p><ul><li>Augmented reality
+    navigation with turn-by-turn directions</li><li>Classification and display
+    of regulatory and warning signs</li><li>Object detection for vehicles,
+    pedestrians, road signs, and traffic lights</li><li>Semantic segmentation of
+    the roadway into 12 different classes (Full list
+    below)&nbsp;</li><li>Distance detection that indicates spacing to lead
+    vehicle</li></ul>
+- question: What can I do with the Vision SDK that I couldn’t do before?
   answer_html: >-
-    <p>There are three components to the Mapbox Vision SDK: VisionCore,
-    VisionSDK, and VisionAR. VisionCore is the core logic of the system,
-    including all machine learning models; it exists as closed-source library
-    compiled for each platform with a user-facing API. VisionSDK is a framework
-    written in native language (Kotlin for Android, Swift for iOS) that
-    encapsulates core utilization and platform-dependent tasks. It calls
-    VisionCore. Finally, VisionAR is a native framework with dependency on the
+    <p>The Vision SDK is a lightweight, multi-platform solution for live
+    location. Situational context is interpreted with AI-powered image
+    processing that is fast enough to run in real-time, yet efficient enough to
+    work on today&rsquo;s smartphones running completely on device. The Vision
+    SDK is comprised of a suite of driving features that previously required
+    specialized hardware and software systems to run.<br /><br />The Vision SDK
+    brings the developer into the driver&rsquo;s seat with a comprehensive set
+    of real-time navigation and mapping features that fit into a single mobile
+    or embedded application. The Vision SDK unlocks augmented reality
+    turn-by-turn directions, classification of road signs, detection and
+    segmentation of various road features, customizable safety alerts, and more.
+    Live interpretation of road conditions with connectivity to the rest of the
+    Mapbox ecosystem gives drivers access to fresher, more granular driving
+    information than ever before.</p>
+- question: How does the Vision SDK tie into the rest of Mapbox’s products and services?
+  answer_html: >-
+    <p>Mapbox&rsquo;s live location platform incorporates dozens of different
+    data sources to power our maps. Map data originates from sensors as far away
+    as satellites and as close up as street level imagery. Conventionally,
+    collected imagery requires extensive processing before a map can be created
+    or updated. The innovation of the Vision SDK is its ability to process live
+    data with distributed sensors, keeping up with our rapidly changing world.
+    Changes to the driving environment are detected on the spot and uploaded to
+    make low-latency, low-bandwidth updates to the living map.</p>
+- question: What is the difference between the Vision SDK and the Vision Teaser?
+  answer_html: >-
+    <p>The Vision Teaser is a reference app that we are sharing with customers
+    and developers to give a sneak peak of the AI-powered computer vision
+    features that we are building. The Vision SDK allows you to bring all of the
+    functionality showcased in the Vision Teaser into your own applications.</p>
+- question: How do I get started with Vision SDK?
+  answer_html: >-
+    <p>To begin developing on the Vision SDK, you will need to apply for access
+    on our landing page. When you receive access, we will share the location of
+    our beta repository with you directly, which will include instructions on
+    how to get up and running. We are constantly adding customers to the beta
+    but the space is temporarily limited. &nbsp;</p>
+- question: What are the components of the Vision SDK?
+  answer_html: >-
+    <p>There are three components to the Vision SDK: VisionCore, VisionSDK, and
+    VisionAR.</p><ul><li>VisionCore is the core logic of the system, including
+    all machine learning models; it exists as compiled library for each platform
+    with a user-facing API.</li><li>VisionSDK is a framework written in native
+    language (Kotlin for Android, Swift for iOS) that encapsulates core
+    utilization and platform-dependent tasks. It calls
+    VisionCore.</li><li>VisionAR is a native framework with dependency on the
     Mapbox Navigation SDK. It takes information from the specified navigation
     route, transfers it to VisionCore via VisionSDK, receives instructions on
     displaying the route, and then finally renders it on top of camera frame
-    using native instruments.</p>
-- question: What can I do with the Vision SDK?
+    using native instruments.</li></ul>
+- question: What platforms are supported by the Vision SDK so far?
   answer_html: >-
-    <p>Client applications will be able to utilize live imagery processed by the
-    Vision SDK, unlocking augmented reality navigation, classification of road
-    signs, detection and segmentation of various road features, customizable
-    safety alerts, and more. On the backend, the SDK feeds valuable road
-    metadata back into Mapbox&rsquo;s live location platform.</p>
-- question: What is the difference between the Vision SDK and the Vision Teaser?
+    <p>iOS</p><ul><li>iOS 11.2 and newer</li><li>Swift 4.1</li><li>Recommended
+    devices for development:<ul><li>iPhone 7 // 7+ // 8 // 8+ //
+    X</li></ul></li></ul>
+- question: What other platforms will the Vision SDK support?
   answer_html: >-
-    <p>The Mapbox Vision Teaser is a reference app that we are sharing with
-    customers and developers to give a sneak peak of the AI-powered computer
-    vision features that we are building. The Vision SDK allows you to bring all
-    of the functionality showcased in the Vision Teaser into your own
-    applications.</p>
-- question: How do I get started with Vision SDK?
-  answer_html: >-
-    <p>To begin developing on the Mapbox Vision SDK, you will need to apply for
-    access on our landing page. If you are selected to receive access, fill out
-    the simple web form on this page, read and agree to the evaluation
-    agreement, and click submit.</p>
-- question: What platforms are supported by the Vision SDK?
-  answer_html: >-
-    <p><strong>iOS</strong></p><ul><li>iOS 11.2 and newer</li><li>Swift
-    4.1</li></ul><p>Recommended devices for development:</p><ul><li>iPhone 7 //
-    7+ // 8 // 8+ // X</li></ul><p><strong>Android (Coming
-    soon)</strong></p><ul><li>Android 6 (API 23) and higher</li><li>QC
-    Snapdragon 650 // 710 // 8xx with Open CL support</li></ul><p>Recommended
-    devices for development:</p><ul><li>Samsung Galaxy S8, S8+ // S9, S9+ //
-    Note 8</li><li>Xiaomi Mi 6 // 8</li><li>HTC U11, U11+ // U12,
-    U12+</li><li>OnePlus 5 // 6</li></ul><p><strong>Embedded Linux (Coming
-    soon)</strong></p>
+    <p>Android (Coming 2018)</p><ul><li>Android 6 (API 23) and higher</li><li>QC
+    Snapdragon 650 // 710 // 8xx with Open CL support</li><li>Recommended
+    devices for development:<ul><li>Samsung Galaxy S8, S8+ // S9, S9+ // Note
+    8</li><li>Xiaomi Mi 6 // 8</li><li>HTC U11, U11+ // U12,
+    U12+</li><li>OnePlus 5 // 6</li></ul></li></ul><p>Embedded Linux (Coming
+    2018)</p>
 - question: When can I expect Android support?
   answer_html: >-
     <p>Support for phones running on Qualcomm Snapdragon 650 // 710 // 8xx
-    chipsets is coming by the end of September. Other popular Android platforms
-    will be coming later this year.</p>
-- question: Will the Vision SDK be open source?
-  answer_html: >-
-    <p>All components of the Vision SDK will be closed source during the beta
-    phase. Some components may be made open source for general availability
-    launch later this year.</p>
+    chipsets is coming in October. Other popular Android platforms will be
+    coming later this year.</p>
 - question: Do I need to use my data plan to utilize the Vision SDK?
   answer_html: >-
     <p>Yes. Augmented reality navigation and automated feature extraction
     require connectivity to work. However, the neural networks used to run
     classification, detection, and segmentation all run on-device without
-    needing cloud resources.</p>
-- question: How much data does the Mapbox Vision Teaser use?
+    needing cloud resources.&nbsp;</p>
+- question: How much data does the Vision SDK use?
   answer_html: >-
-    <p>The Vision Teaser uses at most 30 MB of data per hour. For reference,
+    <p>The Vision SDK beta uses at most 30 MB of data per hour. For reference,
     this is less than half of what Apple Music uses on the lowest quality
     setting.</p>
 - question: Can the Vision SDK read all road signs?
-  answer_html: <p>The latest version of the Vision SDK</p>
+  answer_html: >-
+    <p>The latest version of the Vision SDK recognizes over 80 of the most
+    common road signs today, including speed limits (5 - 120 mph or kph),
+    regulatory signs (merges, turn restrictions, no passing, etc.), warning
+    signs (traffic signal ahead, bicycle crossing, narrow road, etc.), and many
+    others. The Vision SDK does not read individual letters or words on signs,
+    but rather learns to recognize each sign type holistically. As a result, it
+    generally cannot interpret guide signs (e.g. &ldquo;Mariposa St. Next
+    Exit&rdquo;).</p>
 - question: What type of road network data is Mapbox getting back from the Vision SDK?
   answer_html: >-
     <p>The Vision SDK is sending back limited telemetry data from the device,
     including road feature detections and certain road imagery, at a data rate
     not to exceed 30 MB per hour. This data is being used to improve our
     products and services, including the Vision SDK.</p>
-- question: Where can I use the Mapbox Vision SDK?
+- question: Where can I use the Vision SDK?
   answer_html: >-
-    <p>The Mapbox Vision Teaser features will work on virtually any road. The
-    quality of the feature classification, detection, and segmentation varies
-    from one driving environment to the next, however.</p>
-- question: Does the application work in the rain and/or snow?
-  answer_html: >-
-    <p>Yes. Just like human eyes, however, the Vision SDK works better the
-    better it can see.</p>
-- question: Does it work at night?
-  answer_html: >-
-    <p>The Vision SDK works best under good lighting conditions. However, it
-    does have pretty good functionality at night, depending on how well the road
-    is illuminated. In cities with ample street lighting, for example, the
-    Vision Teaser still performs quite well.</p>
+    <ul><li>Semantic segmentation, object detection, and following distance
+    detection will work on virtually any road.</li><li>The core functionality of
+    the augmented reality navigation with turn-by-turn directions is supported
+    globally. AR navigation with live traffic is supported in over 40 countries,
+    covering all of North America, most of Europe, Japan, South Korea, and
+    several other markets.&nbsp;</li><li>Sign classification is currently
+    optimized for North America, with some limited support in other regions.
+    Sign classification for other regions is under development.</li></ul>
 - question: What is “classification”?
   answer_html: >-
     <p>In computer vision, classification is the process by which an algorithm
@@ -112,9 +132,12 @@
 - question: What is “segmentation”?
   answer_html: >-
     <p>In computer vision, segmentation is the process by which each pixel in an
-    image is assigned to a different category. For example, the Vision SDK
-    analyzes each frame of imagery and paints the pixels different colors
-    corresponding to things like lane markings, vehicles, pedestrians, etc.</p>
+    image is assigned to a different category, or &ldquo;class&rdquo;. For
+    example, the Vision SDK analyzes each frame of road imagery and paints the
+    pixels different colors corresponding its the underlying class. The Vision
+    SDK supports the following classes: roadway, painted roadway (e.g.
+    crosswalk), lane boundaries, traffic lights, traffic signs, vehicles,
+    cyclists, pedestrians, buildings, vegetation, sky, other.</p>
 - question: What is the difference between detection and segmentation?
   answer_html: >-
     <p>Detection identifies discrete objects (e.g., individual vehicles) and
@@ -132,52 +155,69 @@
     when a given image is seen. The accuracy of your location estimate depends
     on where you are. Location accuracy works better when you are outside with a
     lot of the sky visible. It is generally poor indoors, in tunnels, or when
-    you are surrounded by lots of tall buildings, i.e., an urban
-    canyon.</p><p>Once the Vision SDK has an estimate of its location and
-    orientation (aka &ldquo;pose&rdquo;), it estimates the location of detected
-    objects based on the properties of the camera being used (for example, the
-    focal length of the lens). When traveling on a flat surface, the location of
-    different parts of an image, (x,y) in pixels, correspond closely to
-    different parts of the real world (latitude, longitude). Under good GPS
-    conditions (decent amount of sky visible), the Vision SDK is able to
-    determine the location of a detected object or feature to within a few
-    meters. This accuracy is currently being improved; in the future, existing
-    data from Mapbox&rsquo;s location platform will be able to refine your
-    location estimate further.</p>
+    you are surrounded by lots of tall buildings. Once the Vision SDK has an
+    estimate of its location and orientation (aka &ldquo;pose&rdquo;), it
+    estimates the location of detected objects based on the properties of the
+    camera being used (for example, the focal length of the lens). When
+    traveling on a flat surface, the location of different parts of an image,
+    (x,y) in pixels, correspond closely to different parts of the real world
+    (latitude, longitude). Under good GPS conditions (decent amount of sky
+    visible), the Vision SDK is able to determine the location of a detected
+    object or feature to within a few meters. This accuracy is currently being
+    improved; in the future, existing data from Mapbox&rsquo;s location platform
+    will be able to refine your location estimate further.</p>
+- question: Can I rely on the Vision SDK to make driving decisions?
+  answer_html: >-
+    <p>No. The Vision SDK is designed to provide context to aid driving, but
+    does not replace any part of the driving task. During beta, feature
+    detection is still being tested.&nbsp;</p>
+- question: Can I use the Vision SDK to make my car drive itself?
+  answer_html: >-
+    <p>No. The Vision SDK can be used to issue safety alerts and provide
+    augmented reality navigation instructions and other features, but does not
+    make any driving decisions.</p>
+- question: >-
+    What is the best way for my users to mount their phones when using the
+    Vision SDK?
+  answer_html: >-
+    <ul><li>The Vision SDK works best when your phone is mounted either to the
+    windshield or the dashboard of your car with a good view of the road.
+    We&rsquo;ve tested a lot of mounts; here are a few of our
+    favorites:<ul><li><a data-cms-editor-link-style="undefined"
+    href="https://www.amazon.com/gp/product/B06ZZWYQF7/ref=oh_aui_detailpage_o04_s00?ie=UTF8&amp;psc=1">Option
+    1</a></li><li><a data-cms-editor-link-style="undefined"
+    href="https://www.amazon.com/Getron-Windshield-Dashboard-Universal-Smartphones/dp/B00XJE2YHQ/ref=sr_1_6?ie=UTF8&amp;qid=1534148298&amp;sr=8-6&amp;keywords=window+phone+holder&amp;dpID=51EqlGjpkzL&amp;preST=_SY300_QL70_&amp;dpSrc=srch">Option
+    2</a></li><li><a data-cms-editor-link-style="undefined"
+    href="https://www.amazon.com/AboveTEK-Suction-Bathroom-Windshield-Smartphone/dp/B074PD1GNY/ref=sr_1_1_sspa?ie=UTF8&amp;qid=1534148298&amp;sr=8-1-spons&amp;keywords=window+phone+holder&amp;psc=1">Option
+    3</a></li></ul></li><li><p>Some things to consider when choosing and setting
+    up a mount:</p><ul><li><p>Generally, shorter length mounts will vibrate
+    less. Mounting to your windshield or to the dashboard itself are both
+    options.</p></li><li><p>The Vision SDK will work best when the phone is
+    near/behind where your rear view mirror is, but please note your local
+    jurisdiction&rsquo;s limits on where mounts may be
+    placed.</p></li><li><p>Make sure the phone&rsquo;s camera view is
+    unobstructed (you will be able to tell with any of the video screens
+    open).</p></li></ul></li></ul>
 - question: Will the Vision SDK drain my battery?
   answer_html: >-
-    <p>The Vision Teaser consumes CPU, GPU and other resources to process road
-    imagery on-the-fly. Just as with any other navigation or video app we
-    recommend having your phone plugged in if you are going to use it for over
-    30 minutes at a time. &nbsp;</p>
+    <p>The Vision SDK consumes CPU, GPU and other resources to process road
+    imagery on-the-fly. Just as with any other navigation or video application,
+    we recommend having your phone plugged in if you are going to use it for
+    over 30 minutes at a time. &nbsp;</p>
 - question: Will my phone get hot if I run the Vision SDK for a long time?
   answer_html: >-
     <p>The phone will get warmer as the application consumes a decent amount of
     resources. However, we have not run into any heat issues with
     moderate-to-heavy use.</p>
-- question: >-
-    What is the best way for my users to mount their phones when using the
-    Vision SDK?
-  answer_html: >-
-    <p>The Vision Teaser works best when your phone is mounted either to the
-    windshield or the dashboard of your car with a good view of the road.
-    We&rsquo;ve tested a lot of mounts; here are a few of our
-    favorites:</p><ul><li><p><a data-cms-editor-link-style="undefined"
-    target="_blank"
-    href="https://www.amazon.com/gp/product/B06ZZWYQF7/ref=oh_aui_detailpage_o04_s00?ie=UTF8&amp;psc=1">Option
-    1</a></p></li><li><p><a data-cms-editor-link-style="undefined"
-    target="_blank"
-    href="https://www.amazon.com/Getron-Windshield-Dashboard-Universal-Smartphones/dp/B00XJE2YHQ/ref=sr_1_6?ie=UTF8&amp;qid=1534148298&amp;sr=8-6&amp;keywords=window+phone+holder&amp;dpID=51EqlGjpkzL&amp;preST=_SY300_QL70_&amp;dpSrc=srch">Option
-    2</a></p></li><li><p><a data-cms-editor-link-style="undefined"
-    target="_blank"
-    href="https://www.amazon.com/AboveTEK-Suction-Bathroom-Windshield-Smartphone/dp/B074PD1GNY/ref=sr_1_1_sspa?ie=UTF8&amp;qid=1534148298&amp;sr=8-1-spons&amp;keywords=window+phone+holder&amp;psc=1">Option
-    3</a></p></li></ul><p>Some things to consider when choosing and setting up a
-    mount:</p><ul><li>Generally, shorter length mounts will vibrate less.
-    Mounting to your windshield or to the dashboard itself are both
-    options</li><li>Vision will do best with detections when the phone is
-    near/behind where your rearview mirror is, but note your local
-    jurisdiction&rsquo;s limits on where mounts may be placed</li><li>Make sure
-    the phone&rsquo;s camera view is unobstructed (you will be able to tell with
-    any of the video screens open)</li></ul>
-- question: Does the Vision SDK work in countries that drive on the left?
+- question: Will the Vision SDK work in countries that drive on the left?
   answer_html: <p>Yes.</p>
+- question: Does the Vision SDK work in the rain and/or snow?
+  answer_html: >-
+    <p>Yes. Just like human eyes, however, the Vision SDK works better the
+    better it can see.</p>
+- question: Does the Vision SDK work at night?
+  answer_html: >-
+    <p>The Vision SDK works best under good lighting conditions. However, it
+    does function at night, depending on how well the road is illuminated. In
+    cities with ample street lighting, for example, the Vision SDK still
+    performs quite well.</p>
