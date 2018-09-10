@@ -22,6 +22,10 @@ function bgImage() {
     bgImage();
   });
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
 
 // import App from './App';
 // import { TimelineMax, CSSPlugin, ScrollToPlugin, Draggable } from "gsap/all";
