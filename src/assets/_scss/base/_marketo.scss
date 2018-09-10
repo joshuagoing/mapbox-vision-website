@@ -27,6 +27,7 @@
         border-radius: 0;
         border: 1px solid $white;
         background-color: $dark;
+        color: $white;
         box-shadow: 0 0 3px 0 rgba($black, 0.4);
         @include transition();
       }    
