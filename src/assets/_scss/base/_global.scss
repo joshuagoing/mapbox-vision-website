@@ -1,0 +1,11 @@
+body {
+  background-color: $black;
+}
+
+section {
+  position: relative;
+  padding: 50px 15px;
+  @include media-breakpoint-up(md) {
+    padding: 100px 0;
+  }
+}

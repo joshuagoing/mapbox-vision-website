@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.5 81.74">
+  <rect class="stroke" x="0.5" y="30.34" width="35.31" height="21.06"/>
+  <circle class="stroke" cx="75.1" cy="8.4" r="7.9"/>
+  <circle class="stroke" cx="75.1" cy="40.87" r="7.9"/>
+  <circle class="stroke" cx="75.1" cy="73.35" r="7.9"/>
+  <line class="stroke" x1="35.81" y1="30.34" x2="68.08" y2="12.79"/>
+  <line class="stroke" x1="35.81" y1="51.4" x2="68.08" y2="68.96"/>
+  <line class="stroke" x1="35.61" y1="40.87" x2="68.08" y2="40.87"/>
+</svg>

@@ -1,0 +1,158 @@
+---
+layout: default
+---
+<section id="intro" class="bg-dark text-white bg-video aspect-intro">
+  <video playsinline autoplay muted loop class="video-background">
+    <source src="https://player.vimeo.com/external/289001965.hd.mp4?s=5cd4f892a6bb2597a119c7060b69d46a59b5f803&profile_id=174">
+    <source src="https://player.vimeo.com/external/289001965.sd.mp4?s=3fe37821bf04be14f576830f4f19d38b3c431f8f&profile_id=165">
+    <source src="https://player.vimeo.com/external/289001965.sd.mp4?s=3fe37821bf04be14f576830f4f19d38b3c431f8f&profile_id=164" type="video/mp4" media="(min-device-pixel-ratio:2), (-webkit-min-device-pixel-ratio:2), (min--moz-device-pixel-ratio:2), (-o-min-device-pixel-ratio:2)">
+    <source src="https://player.vimeo.com/external/289001965.m3u8?s=608137d5f51749c62680331b449ff15d26e3ac32" type="video/mp4" media="(max-device-pixel-ratio:1), (-webkit-max-device-pixel-ratio:1), (max--moz-device-pixel-ratio:1), (-o-max-device-pixel-ratio:1)">
+  </video>
+  <div class="video-caption">
+    <div class="container">
+      <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-md-6 line line-right h-100"></div>
+        <div class="col-12 col-md-6">
+          <img id="vision-logo" class="img-fluid" src="/assets/img/logo.svg" alt="The Mapbox Vision SDK">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="overlay"></div>
+</section>
+<section class="d-md-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="p-3 text-center">
+          <img class="img-fluid" src="/assets/img/logo.svg" alt="The Mapbox Vision SDK" style="max-width: 220px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-white pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 line line-split right-left"><hr class="my-5"></div>
+    </div>
+    <div id="message" class="row justify-content-center line line-left line-cta">
+      <div class="col-12 col-md-10">
+        <div class="editable">
+          <h1>The future is open.<br>See it with the Mapbox Vision SDK.</h1>
+          <p class="lead my-5">Living maps, intelligent navigation, augmented reality, and high-performance computer vision combine to provide a revolutionary viewport into what’s ahead. The Mapbox Vision SDK transforms connected cameras into a second set of eyes for your car. With live imagery processed directly on your device, we’re bringing visual context to our live location platform and rethinking how machines and humans alike interact with the road.</p>
+          <p class="text-muted">The Mapbox Vision SDK also works in conjunction with our live traffic and navigation, allowing developers on iOS and Android to build a heads-up display experience in their native apps.</p>  
+        </div>
+        <p class="mt-5 mb-0"><a href="#application" class="btn btn-outline-secondary">Request access to the beta</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-dark text-white pb-0">
+  <div class="container">
+    <div id="features" class="row justify-content-center line line-half right-bottom">
+      <div class="col-12 col-md-10">
+        <div class="lead my-5 editable">
+          <p>The future demands fresh, precise maps—for humans and machines alike. The Mapbox Vision SDK unlocks a sophisticated suite of future-ready features, including augmented reality navigation, object detection, and semantic segmentation—turning your phone into a powerful connected sensor.</p>
+        </div>
+        {% include feature-carousel.html %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white pt-0">
+  <div class="container">
+    <div id="feedback-loop" class="row justify-content-center line line-right">
+      <div class="col-12 col-md-10">
+        <div class="editable mt-5">
+          <p>The Mapbox Vision SDK provides unprecedented access to real-time road data that will feed into Mapbox’s live location platform. Imagery is processed directly on the device, so current road conditions and live event data can be used to provide low latency, low bandwidth updates to the living map. Highly efficient neural networks run solely on the device - without the need to upload and process video in the cloud!* The Mapbox Vision SDK is powerful enough to understand today’s driving environment in real time, yet compact enough to run on billions of mobile devices.</p>
+          <small><em>*During the beta, the Mapbox Vision SDK will provide us with limited front facing camera imagery to help us improve our products and services, not to exceed 30 MB per hour.</em></small>
+        </div>
+        <div class="py-4">
+          {% include glamour-carousel.html %}
+        </div>
+      </div>
+    </div>
+
+    <div class="row line line-split">
+      <div class="col-12">
+        <hr>
+      </div>
+    </div>
+
+    <div id="device-support" class="row justify-content-center line line-left line-cta">
+      <div class="col-12 col-md-10">
+        <div class="row align-items-center my-5">
+          <div class="col-12 col-md-4 text-center">
+            <img class="img-fluid w-50 mx-auto" src="/assets/img/logos/ios.svg" alt="iOS" style="max-width: 150px;">
+          </div>
+          <div class="col-12 col-md-4 text-center">
+              <img class="img-fluid w-50 mx-auto" src="/assets/img/logos/android.svg" alt="Android" style="max-width: 150px;">
+          </div>
+          <div class="col-12 col-md-4 text-center">
+              <img class="img-fluid w-50 mx-auto" src="/assets/img/logos/linux.svg" alt="Linux" style="max-width: 150px;">
+          </div>
+        </div>
+        <div class="editable">
+          <p>Today, the Vision SDK is supported for iOS. Android support is coming in late September, and embedded Linux platforms will be added later this year. When run on a smartphone, no additional hardware is necessary other than a windshield or dash mount.</p>
+          <p><a href="https://www.mapbox.com/ios-sdk/vision/overview/">Vision SDK documentation guide</a></p>
+          <p>The Vision SDK is now in private beta and is available to select developers. </p>
+        </div>
+        <p class="mt-5 mb-0"><a href="#application" class="btn btn-outline-secondary">Request beta access today!</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partners" class="bg-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <h3 class="mt-5 text-center editable">These are some of the companies that have stepped into the driver’s seat.</h3>
+        <div class="p-5">
+          <div class="row align-items-center">
+            <div class="col-6 col-md-3">
+              <div class="py-4 p-md-4">
+                <img src="/assets/img/logos/microsoftazure.svg" alt="" class="img-fluid editable">
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="py-4 p-md-4">
+                <img src="/assets/img/logos/arm_logo.svg" alt="" class="img-fluid editable">
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="py-4 p-md-4">
+                <img src="/assets/img/logos/nexar.png" alt="" class="img-fluid editable">
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="py-4 p-md-4">
+                <img src="/assets/img/logos/elecktrobit.png" alt="" class="img-fluid editable">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="application" class="bg-dark text-white">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6">
+        <div class="content text-center editable mb-4">
+          <h2 class="text-mega mb-3">What’s your Vision?</h2>
+          <p class="text-alt text-uppercase"><small>Apply To Join The Beta Version Of Vision SDK.<br>Seats Are Limited</small></p>    
+        </div>
+        <script src="//app-ab22.marketo.com/js/forms2/js/forms2.min.js"></script>
+          <form id="mktoForm_76"></form>
+        <script>MktoForms2.loadForm("//app-ab22.marketo.com", "117-NXK-490", 76);</script>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+# Site settings
+title: The Mapbox Vision SDK
+email: dev@ocupop.com
+description: 'The Mapbox Vision SDK also works in conjunction with our live traffic and navigation, allowing developers on iOS and Android to build a heads-up display experience in their native apps.'
+url: "https://vision.mapbox.com"
+permalink: pretty
+
+share_image: /visionsdk-1200x630.png
+
+# Build settings
+safe: false
+source: src
+
+plugins:
+  - jekyll-sitemap

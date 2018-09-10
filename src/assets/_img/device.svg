@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.2 247.31">
+  <style>
+    .stroke{
+      fill:none;
+      stroke:#DCDEDE;
+      stroke-miterlimit:10;
+    }
+  </style>
+  <rect class="stroke" x="23.04" y="6.6" width="413.98" height="232.27" rx="22.09" ry="22.09"/>
+  <path class="stroke" d="M460.7,161.21v53.57s-1,32-30.38,32H30.88c-29.39,0-30.38-32-30.38-32V32.53s1-32,30.38-32H430.32c29.39,0,30.38,32,30.38,32Z"/>
+  <rect class="stroke" x="10.61" y="111.27" width="4.78" height="25.74" rx="0.49" ry="0.49"/>
+  <rect class="stroke" x="447.57" y="111.27" width="4.78" height="25.74" rx="0.49" ry="0.49"/>
+  <rect class="stroke" x="23.38" y="7.26" width="414.44" height="232.49" rx="22.09" ry="22.09"/>
+</svg>

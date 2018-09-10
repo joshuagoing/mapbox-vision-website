@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.8 64.85">
+  <rect class="stroke" x="0.5" y="0.5" width="106.8" height="63.85"/>
+  <line class="stroke" x1="67.61" y1="0.43" x2="67.61" y2="63.43"/>
+  <polyline class="stroke" points="26.11 1.43 26.11 31.93 0.5 64.35"/>
+  <path class="stroke" d="M51.11,63.93V52.51A20.1,20.1,0,0,0,31,32.42H26.11"/>
+  <line class="stroke" x1="9.11" y1="12.43" x2="107.11" y2="12.43"/>
+  <line class="stroke" x1="25.61" y1="22.93" x2="107.11" y2="22.93"/>
+  <line class="stroke" x1="87.11" y1="0.43" x2="87.11" y2="46.43"/>
+  <polyline class="stroke" points="77.61 63.93 77.61 46.43 107.61 46.43"/>
+  <line class="stroke" x1="57.11" y1="23.43" x2="57.11" y2="37.93"/>
+  <line class="stroke" x1="76.61" y1="0.93" x2="76.61" y2="22.93"/>
+  <line class="stroke" x1="15.11" y1="45.43" x2="15.11" y2="63.93"/>
+</svg>
