@@ -4,7 +4,11 @@
   color: inherit !important;
   width: 100% !important;
   .mktoFormRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     .mktoFormCol {
+      width: 100%;
       float: none;
     }
     .mktoFieldWrap {
