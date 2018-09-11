@@ -1,21 +1,25 @@
 .line {
   &::before,
-  &::after,
-  hr {
+  &::after {
     opacity: 0;
     @include transition(3s);  
   }
 }
-.line-split {
+.split {
   display: none;
 }
+
 @include media-breakpoint-up(md) {
   .line {
     &.active {
       &::before,
-      &::after,
-      hr {
+      &::after {
         opacity: 1;
+      }
+    }
+    &.line-cta {
+      &::before {
+        bottom: 1rem;
       }
     }
   }
@@ -25,8 +29,8 @@
       content: '';
       position: absolute;
       display: block;
-      top: -1rem;
-      bottom: 1rem;
+      top: 0;
+      bottom: 0;
       left: 15px;
       width: 0;
       border-right: 1px solid $line-color;
@@ -40,23 +44,27 @@
       position: absolute;
       display: block;
       top: 0;
-      bottom: -1rem;
+      bottom: 0;
       right: 15px;
       width: 0;
       border-left: 1px solid $line-color;
     }
   }
 
-  .line-split {
-    display: block;
+  .split {
     position: relative;
+    margin: 0;
+    &.active {
+      display: block;
+    }
     &::before {
       content: '';
       position: absolute;
       display: block;
-      bottom: -1rem;
-      top: 50%;
-      left: 15px;
+      bottom: -$split-spacing;
+      top: 0;
+      left: 0;
+      height: $split-spacing;
       width: 0;
       border-right: 1px solid $line-color;
     }
@@ -64,14 +72,27 @@
       content: '';
       position: absolute;
       display: block;
-      bottom: 50%;
-      top: -1rem;
-      right: 15px;
+      top: -$split-spacing;
+      bottom: 0;
+      right: 0;
+      height: $split-spacing;
       width: 0;
       border-left: 1px solid $line-color;
     }
-    hr {
-      display: block;
+
+    &.flip {
+      &::before {
+        top: 0;
+        bottom: auto;
+        right: 0;
+        left: auto;
+      }
+      &::after {
+        top: auto;
+        bottom: 0;
+        right: auto;
+        left: 0;
+      }
     }
   }
 
