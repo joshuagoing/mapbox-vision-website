@@ -39,6 +39,7 @@
     svg {
       height: 100%;
       width: auto;
+      max-width: 95%;
     }
   }
   @include media-breakpoint-up(md) {

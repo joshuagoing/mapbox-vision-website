@@ -1,11 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.72 62.11">
-  <rect class="stroke" x="0.5" y="19.24" width="89.72" height="29.4"/>
-  <line class="stroke" x1="10.72" y1="34.71" x2="10.72" y2="48.71"/>
-  <line class="stroke" x1="24.37" y1="34.71" x2="24.37" y2="48.71"/>
-  <line class="stroke" x1="38.02" y1="34.71" x2="38.02" y2="48.71"/>
-  <line class="stroke" x1="65.31" y1="34.71" x2="65.31" y2="48.71"/>
-  <line class="stroke" x1="78.96" y1="34.71" x2="78.96" y2="48.71"/>
-  <line class="stroke" x1="51.67" y1="27.71" x2="51.67" y2="48.71"/>
-  <circle class="stroke" cx="127.67" cy="47.56" r="14.06"/>
-  <path class="stroke" d="M145.37.5a15.12,15.12,0,0,0-14.79,12L129,20.21H117.32a13.6,13.6,0,0,0-13.6,13.6l-.9,14.83h49.4V.5Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147.99 30.4">
+<rect class="stroke" x="0.5" y="0.5" width="146.99" height="29.4"/>
+<line class="stroke" x1="10.72" y1="15.98" x2="10.72" y2="29.98"/>
+<line class="stroke" x1="24.37" y1="15.98" x2="24.37" y2="29.98"/>
+<line class="stroke" x1="38.02" y1="15.98" x2="38.02" y2="29.98"/>
+<line class="stroke" x1="65.31" y1="15.98" x2="65.31" y2="29.98"/>
+<line class="stroke" x1="78.96" y1="15.98" x2="78.96" y2="29.98"/>
+<line class="stroke" x1="51.67" y1="8.98" x2="51.67" y2="29.98"/>
+<line class="stroke" x1="92.57" y1="15.98" x2="92.57" y2="29.98"/>
+<line class="stroke" x1="118.96" y1="15.98" x2="118.96" y2="29.98"/>
+<line class="stroke" x1="132.57" y1="15.98" x2="132.57" y2="29.98"/>
+<line class="stroke" x1="106.22" y1="8.98" x2="106.22" y2="29.98"/>
 </svg>
