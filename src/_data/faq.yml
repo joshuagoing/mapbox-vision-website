@@ -9,7 +9,8 @@
     pedestrians, road signs, and traffic lights</li><li>Semantic segmentation of
     the roadway into 12 different classes (Full list
     below)&nbsp;</li><li>Distance detection that indicates spacing to lead
-    vehicle</li></ul>
+    vehicle</li><li>Lane detection that indicates home lane, total number of
+    lanes, and direction of travel</li></ul>
 - question: What can I do with the Vision SDK that I couldn’t do before?
   answer_html: >-
     <p>The Vision SDK is a lightweight, multi-platform solution for live
@@ -66,20 +67,15 @@
   answer_html: >-
     <p>iOS</p><ul><li>iOS 11.2 and newer</li><li>Swift 4.1</li><li>Recommended
     devices for development:<ul><li>iPhone 7 // 7+ // 8 // 8+ //
-    X</li></ul></li></ul>
+    X</li></ul></li></ul><p>Android</p><ul><li>Android 6 (API 23) and
+    higher</li><li>QC Snapdragon 650 // 710 // 8xx with Open CL
+    support</li><li>Recommended devices for development:<ul><li>Samsung Galaxy
+    S8, S8+ // S9, S9+ // Note 8</li><li>Xiaomi Mi 6 // 8</li><li>HTC U11, U11+
+    // U12, U12+</li><li>OnePlus 5 // 6</li></ul></li></ul>
 - question: What other platforms will the Vision SDK support?
   answer_html: >-
-    <p>Android (Coming 2018)</p><ul><li>Android 6 (API 23) and higher</li><li>QC
-    Snapdragon 650 // 710 // 8xx with Open CL support</li><li>Recommended
-    devices for development:<ul><li>Samsung Galaxy S8, S8+ // S9, S9+ // Note
-    8</li><li>Xiaomi Mi 6 // 8</li><li>HTC U11, U11+ // U12,
-    U12+</li><li>OnePlus 5 // 6</li></ul></li></ul><p>Embedded Linux (Coming
-    2018)</p>
-- question: When can I expect Android support?
-  answer_html: >-
-    <p>Support for phones running on Qualcomm Snapdragon 650 // 710 // 8xx
-    chipsets is coming in October. Other popular Android platforms will be
-    coming later this year.</p>
+    <p>Support for other Android chipsets, as well as embedded Linux, is coming
+    by the end of the year.</p>
 - question: Do I need to use my data plan to utilize the Vision SDK?
   answer_html: >-
     <p>Yes. Augmented reality navigation and automated feature extraction
@@ -97,10 +93,10 @@
     common road signs today, including speed limits (5 - 120 mph or kph),
     regulatory signs (merges, turn restrictions, no passing, etc.), warning
     signs (traffic signal ahead, bicycle crossing, narrow road, etc.), and many
-    others. The Vision SDK does not read individual letters or words on signs,
-    but rather learns to recognize each sign type holistically. As a result, it
-    generally cannot interpret guide signs (e.g. &ldquo;Mariposa St. Next
-    Exit&rdquo;).</p>
+    others. The Vision SDK does not read individual letters or words on signs
+    (OCR), but rather learns to recognize each sign type holistically. As a
+    result, it generally cannot interpret guide signs (e.g. &ldquo;Mariposa St.
+    Next Exit&rdquo;).</p>
 - question: What type of road network data is Mapbox getting back from the Vision SDK?
   answer_html: >-
     <p>The Vision SDK is sending back limited telemetry data from the device,
