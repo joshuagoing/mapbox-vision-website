@@ -22,6 +22,8 @@ function bgImage() {
     bgImage();
   });
 
+  $('#intro-contest .overlay').fadeTo("slow", 0);
+
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   });

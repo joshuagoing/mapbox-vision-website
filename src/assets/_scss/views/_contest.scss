@@ -1,12 +1,53 @@
 #intro-contest {
   #vision-logo {
-    width: 60%;
+    width: 70%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black;
+    opacity: 1;
+    @include transition(2s);
+    @include media-breakpoint-up(md) {
+      background-image: url('/assets/img/logo.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50%;
+    }
   }
 }
 
-#contest-details {
+body.contest {
   ul,
   ol {
     padding-left: 20px;
+  }
+  ol {
+    li {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      ul {
+        padding-left: 80px;
+        li {
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+  .btn {
+    white-space: normal;
+  }
+}
+
+#ideas {
+  ul {
+    li {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }
